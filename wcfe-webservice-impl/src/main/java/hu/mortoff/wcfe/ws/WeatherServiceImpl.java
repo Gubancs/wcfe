@@ -3,6 +3,9 @@ package hu.mortoff.wcfe.ws;
 import javax.jws.WebMethod;
 import javax.jws.WebService;
 
+import org.springframework.stereotype.Component;
+
+@Component
 @WebService(serviceName = "weatherService")
 public class WeatherServiceImpl implements WeatherService {
 

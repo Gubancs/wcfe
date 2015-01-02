@@ -16,7 +16,7 @@
 		<module>../wcfe-repository</module>
 		<module>../wcfe-webservice</module>
 		<module>../wcfe-webservice-impl</module>
-		<module>../wcfe-client</module>
+		<module>../wcfe-webservice-client</module>
 	</modules>
 
 	<!-- Weather station Project properties -->

@@ -5,12 +5,8 @@
 
 	<context:component-scan base-package="hu.mortoff" />
 
-	<bean class="hu.mortoff.wcfe.ws.WeatherServiceImpl"/>
-
-
 	<bean class="org.springframework.remoting.jaxws.SimpleJaxWsServiceExporter">
-		<property name="baseAddress" value="http://localhost:9888/weatherStation/"></property>
+		<property name="baseAddress" value="http://localhost:9888/wcfe-webservice/"></property>
 	</bean>
-
 
 </beans>
