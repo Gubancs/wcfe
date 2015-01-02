@@ -1,7 +1,12 @@
-package hu.mortoff.wcfe.domain;
+package hu.mortoff.wcfe.domain.embeddable;
 
 import java.io.Serializable;
 
+/**
+ * 
+ * @author Gabor Kokeny
+ *
+ */
 public class Locale implements Serializable {
 
 	private static final long serialVersionUID = 7972414865111303992L;

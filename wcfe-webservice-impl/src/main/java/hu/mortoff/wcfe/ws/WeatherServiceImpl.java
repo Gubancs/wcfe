@@ -5,6 +5,11 @@ import javax.jws.WebService;
 
 import org.springframework.stereotype.Component;
 
+/**
+ * 
+ * @author Gabor Kokeny
+ *
+ */
 @Component
 @WebService(serviceName = "weatherService")
 public class WeatherServiceImpl implements WeatherService {

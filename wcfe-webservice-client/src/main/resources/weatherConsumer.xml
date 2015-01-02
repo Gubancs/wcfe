@@ -8,6 +8,13 @@
 
 	<context:property-placeholder location="config.properties" />
 
+	<bean id="calculatorService"
+		class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean"
+		p:wsdlDocumentUrl="${ws.url}/calculatorService?wsdl" p:serviceName="calculatorService"
+		p:portName="CalculatorServiceImplPort" p:serviceInterface="hu.mortoff.wcfe.ws.CalculatorService"
+		p:namespaceUri="http://ws.wcfe.mortoff.hu/" />
+
+
 	<bean id="weatherService"
 		class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean"
 		p:wsdlDocumentUrl="${ws.url}/weatherService?wsdl" p:serviceName="weatherService"
@@ -21,5 +28,10 @@
 		p:portName="CountryServiceImplPort" p:serviceInterface="hu.mortoff.wcfe.ws.CountryService"
 		p:namespaceUri="http://ws.wcfe.mortoff.hu/" />
 
+	<bean id="clientConsumer"
+		class="org.springframework.remoting.jaxws.JaxWsPortProxyFactoryBean"
+		p:wsdlDocumentUrl="${ws.url}/clientService?wsdl" p:serviceName="clientService"
+		p:portName="ClientServiceImplPort" p:serviceInterface="hu.mortoff.wcfe.ws.ClientService"
+		p:namespaceUri="http://ws.wcfe.mortoff.hu/" />
 
 </beans>

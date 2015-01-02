@@ -1,9 +1,15 @@
 package hu.mortoff.wcfe.domain;
 
+import hu.mortoff.wcfe.domain.embeddable.Locale;
 
 import java.io.Serializable;
 import java.util.Date;
 
+/**
+ * 
+ * @author Gabor Kokeny
+ *
+ */
 public class Country implements Serializable {
 
 	private static final long serialVersionUID = 2757470301503368303L;

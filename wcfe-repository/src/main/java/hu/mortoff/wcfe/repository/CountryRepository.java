@@ -5,9 +5,14 @@ import hu.mortoff.wcfe.domain.Country;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+/**
+ * 
+ * @author Gabor Kokeny
+ *
+ */
+@Repository
 public class CountryRepository {
 
 	private static Map<Long, Country> map;
