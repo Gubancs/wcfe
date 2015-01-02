@@ -11,7 +11,10 @@ import org.springframework.util.Assert;
  * @author Gabor Kokeny
  *
  */
-public class DateUtils {
+public abstract class DateUtils {
+
+	private DateUtils() {
+	}
 
 	public static long getDayDiff(Date targetDate) {
 		return getDateDiff(targetDate, DateUtils.now(), TimeUnit.DAYS);

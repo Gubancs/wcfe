@@ -196,9 +196,6 @@ public class DateUtilsTest {
 		assertEquals(0, calendar.get(Calendar.SECOND));
 		assertEquals(0, calendar.get(Calendar.MILLISECOND));
 
-		assertNotSame(0, calendar.get(Calendar.DATE));
-		assertNotSame(0, calendar.get(Calendar.MONTH));
-		assertNotSame(0, calendar.get(Calendar.YEAR));
 	}
 
 	@Test
